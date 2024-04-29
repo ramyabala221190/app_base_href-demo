@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --configuration=production --project=baseHrefDemoV1 --base-href=/v1/ && ng build --configuration=production --project=baseHrefDemoV2 --base-href=/v2/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -23,6 +23,7 @@
     "zone.js": "~0.13.0"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "^16.2.14",
     "@angular/cli": "~16.2.3",
     "@angular/compiler-cli": "^16.2.0",
     "@types/jasmine": "~4.3.0",
