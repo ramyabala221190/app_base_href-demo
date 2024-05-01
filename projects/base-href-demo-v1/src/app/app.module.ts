@@ -16,9 +16,13 @@ import { ChildComponent } from './child/child.component';
     AppRoutingModule
   ],
   providers: [
+    // {
+    //   provide:APP_BASE_HREF,
+    //   useValue:"/app-v1/"
+    // }
     {
       provide:APP_BASE_HREF,
-      useValue:"/app-v1/"
+      useValue:"/v1/"
     }
   ],
   bootstrap: [AppComponent]
